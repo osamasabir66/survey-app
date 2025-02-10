@@ -106,11 +106,13 @@ input:-webkit-autofill,
   <body>
     <h1>Survey App</h1>
     <form action="https://script.google.com/macros/s/AKfycbxrFKU5N5Nthy1ZeWdnqOkdefNaxBmr-wUmI9KxNDB6dUXe21m2hp4AyLm8gUVbRIk/exec" method="post">
-      <input name="Name" type="text" placeholder="Name" required>
-      <input name="Phone Number #1" type="number" placeholder="Phone Number #1" required>
-      <input name="Phone Number #2" type="number" placeholder="Phone Number #2" required>
-      <input name="Email" type="email" placeholder="Email" required>
-      <input name="Description" type="text" placeholder="Description" required>
+      <input name="Owner Name" type="text" placeholder="Owner Name" required>
+      <input name="Owner Contact #1" type="number" placeholder="Owner Contact #1" required>
+      <input name="Owner Contact #2" type="number" placeholder="Owner Contact #2" required>
+      <input name="Owner Email" type="email" placeholder="Owner Email" required>
+      <input name="Number of Acre" type="number" placeholder="Number of Acre" step=any required>
+      <input name="Rates per Acre" type="number" placeholder="Rates per Acre" required>
+      <input name="Status (Unregistered/Registered)" type="text" placeholder="Status (Unregistered/Registered)" required>
       <input type="text" id="Latitude" name="Latitude" placeholder="Latitude">
       <input type="text" id="Longitude" name="Longitude" placeholder="Longitude">
       <button type="button" onclick="getLocation()" class="locationbtn">Get Location</button>
