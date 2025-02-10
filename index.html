@@ -42,6 +42,19 @@
     font-family: sans-serif;
       }
 
+      select {
+        padding: 16px;
+    border: 2px solid gray;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    background: none;
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    font-family: sans-serif;
+      }
+
       button {
         padding: 18px;
     border: none;
@@ -77,6 +90,10 @@ padding: 14px 14px;
 }
       textarea::placeholder {
         color: #fff;
+} 
+
+option{
+  color: #292929;
 }
 
 p{
@@ -143,7 +160,12 @@ input:-webkit-autofill,
       <input name="Owner Email" type="email" placeholder="Owner Email (Optional)">
       <input name="Number of Acre" type="number" placeholder="Number of Acre" step=any required>
       <input name="Rates per Acre" type="number" placeholder="Rates per Acre" required>
-      <input name="Status (Unregistered/Registered)" type="text" placeholder="Status (Unregistered/Registered)" required>
+      <!-- <input name="Status (Unregistered/Registered)" type="text" placeholder="Status (Unregistered/Registered)" required> -->
+      <select name="Status (Unregistered/Registered)" placeholder="Status (Unregistered/Registered)" required>
+        <option value="" disabled selected>Status (Unregistered/Registered)</option>
+        <option value="Registered">Registered</option>
+        <option value="Unregistered">Unregistered</option>
+      </select>
       <textarea name="Remarks" rows="4" type="text" placeholder="Remarks (Optional)"></textarea>
       <input type="text" id="Latitude" name="Latitude" placeholder="Latitude">
       <input type="text" id="Longitude" name="Longitude" placeholder="Longitude">
